@@ -1,0 +1,14 @@
+@( form: play.data.Form[models.MyModel] )
+
+@main("Validation groups form helper bug") {
+
+  @helper.form( action = controllers.routes.Application.index() ) {
+
+    @helper.inputText( form("name") )
+
+    <input type="submit" />
+
+  }
+
+
+}
